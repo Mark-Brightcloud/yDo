@@ -14,7 +14,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.site90.tianyu.ydo.MainActivity"
+            android:name="com.tianyu.ydo.MainActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait" >
             <intent-filter>
@@ -24,11 +24,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.site90.tianyu.ydo.SignUp"
+            android:name="com.tianyu.ydo.SignUp"
             android:label="@string/title_signUp" >
         </activity>
         <activity
-            android:name="com.site90.tianyu.ydo.PassReset"
+            android:name="com.tianyu.ydo.PassReset"
             android:label="@string/title_passReset" >
         </activity>
     </application>

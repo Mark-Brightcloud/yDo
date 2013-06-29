@@ -1,4 +1,6 @@
-package com.site90.tianyu.ydo;
+package com.tianyu.ydo;
+
+import com.tianyu.ydo.R;
 
 import android.os.Bundle;
 import android.app.Activity;

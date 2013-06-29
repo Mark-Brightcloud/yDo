@@ -6,6 +6,7 @@
     <string name="action_about"> About us </string>
     <string name="action_logout"> Log out </string>
 
+    
     <!-- Main Page -->
     <string name="email_main"> Enter your yDo email </string>
     <string name="password_main"> Enter your yDo password </string>
@@ -15,14 +16,16 @@
     <string name="noAccount_main"> Start yDo without account </string>
     <string name="passReset_main"> Forgot password? </string>
 
+    
     <!-- Sign Up Page -->
     <string name="title_signUp">Sign Up</string>
+    <string name="firstName_signUp">Enter your first name</string>
+    <string name="lastName_signUp">Enter your last name</string>
     <string name="enterEmail_signUp">Enter your email</string>
     <string name="enterPassword_1_signUp">Enter your password</string>
     <string name="enterPassword_2_signUp">Enter password again</string>
     <string name="submit_signUp">Submit yDo account</string>
-    <string name="firstName_signUp">Enter your first name</string>
-    <string name="lastName_signUp">Enter your last name</string>
+
 
     <!-- Password Reset Page -->
     <string name="title_passReset">Password Reset</string>
