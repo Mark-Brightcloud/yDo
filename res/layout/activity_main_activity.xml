@@ -11,85 +11,86 @@
 
    	<!-- User email input field -->
     <EditText 
-        android:id="@+id/email_field"
+        android:id="@+id/email_main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/email_field"
+        android:layout_alignLeft="@+id/email_main"
         android:layout_alignParentTop="true"
         android:layout_marginTop="40dp"
         android:ems="10"
         android:gravity="center"
-        android:hint="@string/enterEmail"
+        android:hint="@string/email_main"
         android:inputType="textEmailAddress" >
 		<requestFocus/>
     </EditText>
     
  	<!-- User password input field -->
     <EditText
-        android:id="@+id/password_field"
+        android:id="@+id/password_main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/email_field"
+        android:layout_below="@+id/email_main"
         android:layout_marginTop="20dp"
         android:ems="10"
         android:gravity="center"
-        android:hint="@string/enterPassword"
+        android:hint="@string/password_main"
         android:inputType="textPassword" />
     
-    <!-- Login button -->
-    <Button
-        android:id="@+id/login_button"
-        android:onClick="loginClicked"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/password_field"
-        android:layout_marginTop="50dp"
-        android:text="@string/login" />
-
-	<!-- Sign up button -->
-    <Button
-        android:id="@+id/singUp_button"
-        android:onClick="signUpClicked"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/login_button"
-        android:layout_marginTop="30dp"
-        android:text="@string/signUp" />
-
     <!-- Auto login checkbox -->
     <CheckBox
-        android:id="@+id/autoLogin_checkBox"
-        android:onClick="autoLoginChecked"
+        android:id="@+id/autoLogin_main"
+        android:onClick="autoLoginClicked"
         android:textSize="12sp"
         android:checked="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/login_button"
-        android:layout_below="@+id/password_field"
+        android:layout_alignRight="@+id/login_main"
+        android:layout_below="@+id/password_main"
         android:layout_marginTop="10dp"
-        android:text="@string/autoLogin" />
-
-    <!-- Password forgot reset button -->
+        android:text="@string/autoLogin_main" />
+    
+    <!-- Login button -->
     <Button
-        android:id="@+id/forgotPassword_button"
-        android:onClick="forgotPasswordClicked"
+        android:id="@+id/login_main"
+        android:onClick="loginClicked"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/autoLogin_main"
+        android:layout_marginTop="10dp"
+        android:text="@string/login_main" />
+
+	<!-- Sign up button -->
+    <Button
+        android:id="@+id/singUp_main"
+        android:onClick="signUpClicked"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_main"
+        android:layout_marginTop="30dp"
+        android:text="@string/singUp_main" />
+
+	<!-- Start yDo without account button -->
+	<Button
+        android:id="@+id/noAccount_main"
+        android:onClick="noAccountClicked"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/singUp_main"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/noAccount_main" />
+	
+	<!-- Password forgot reset button -->
+
+    <Button
+        android:id="@+id/passReset_main"
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="35dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="42dp"
-        android:text="@string/forgotPassword" />
-    
-	<!-- Start yDo without account button -->
-    <Button
-        android:id="@+id/noAccount_button"
-        android:onClick="noAccountClicked"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/singUp_button"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="42dp"
-        android:text="@string/noAccount" />
+        android:layout_marginBottom="40dp"
+        android:onClick="passResetClicked"
+        android:text="@string/passReset_main" />
 
 </RelativeLayout>
