@@ -89,8 +89,8 @@ public class MainActivity extends Activity implements OnClickListener{
 
 
 
-/* Database
-
+/* Database connection from Pphp 
+ 
 $mysql_host = "mysql5.000webhost.com";
 $mysql_database = "a3531967_ydo";
 $mysql_user = "a3531967_ydo";
